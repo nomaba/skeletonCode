@@ -45,3 +45,46 @@ public static int[] mergeSort(int[] array)
     result = merge(left, right);
     return result;
 }
+
+public static int[] merge(int[] left, int[] right)
+{
+    int resultLength = right.Length + left.Length;
+    int [] result = new int[resultLength];
+    //
+    int indexLeft = 0, indexRight = 0, indexResult = 0;
+    //while either array still has an element
+    while (indexLeft < left.Length || indexRight < right.Length)
+    {
+        //if both arrays have elements
+        if (indexLeft < left.Length && indexRight < right.Length)
+        {
+            //if item on left array is less that item on right array, add that item to the result array
+            if (left[indexLeft] <= right[indexRight])
+            {
+                result[indexResult] = left[indexLeft];
+                indexLeft++;
+                indexResult++;
+
+            } // else the item in the right array will be added to the results array
+            else
+            {
+            result[indexResult] = right[indexRight];
+            indexRight++;
+            indexResult++;
+            }
+        } // if only the left array still has elements, add all its items to the results array
+        else if (indexLeft < left.Length)
+        {
+            result[indexResult] = left[indexLeft];
+            indexLeft++;
+            indexRight++;
+        } // if only the right array still has elements, add all its items to the results array
+        else if (indexRight < right.Length)
+        {
+            result[indexResult] = right[indexRight];
+            indexRight++;
+            indexResult++;
+        }
+    }
+    return result;
+}
