@@ -17,7 +17,7 @@ namespace TargetClearCS
 
         static void Main(string[] args)
         {
-            List<int> NumbersAllowed = new List<int>();
+            List<int> NumbersAllowed = new List<int>(); // Creates a new list called "NumbersAllowed" that stores integers
             List<int> Targets;
             int MaxNumberOfTargets = 20;
             int MaxTarget;
