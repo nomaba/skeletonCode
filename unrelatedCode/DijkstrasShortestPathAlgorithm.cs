@@ -1,5 +1,5 @@
 // Driver Code
-public static void Main()
+public static void Main(string[] args)
 {
     /* Let us create the example
     graph discussed above */
