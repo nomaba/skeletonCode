@@ -17,23 +17,23 @@ namespace TargetClearCS
 
         static void Main(string[] args)
         {
-            List<int> NumbersAllowed = new List<int>(); // Creates a new list called "NumbersAllowed" that stores integers
-            List<int> Targets;
-            int MaxNumberOfTargets = 20;
-            int MaxTarget;
-            int MaxNumber;
-            bool TrainingGame;
-            Console.Write("Enter y to play the training game, anything else to play a random game: ");
-            string Choice = Console.ReadLine().ToLower();
-            Console.WriteLine();
-            if (Choice == "y")
+            List<int> NumbersAllowed = new List<int>(); // Creates a new list called "NumbersAllowed" that stores integers // Ready to store numbers
+            List<int> Targets; // Declares the variable Targets // Not ready to store numbers because it has not been initialised yet
+            int MaxNumberOfTargets = 20; // Declares new int variable MaxNumberOfTargets and stores 20 in it
+            int MaxTarget; // Declares new int variable MaxTarget but doesnt store anything inside
+            int MaxNumber; // Declares new int variable MaxNumber but doesnt store anything inside
+            bool TrainingGame; // Declares new bool variable TrainingGame but doesnt store anything inside
+            Console.Write("Enter y to play the training game, anything else to play a random game: "); // Output text in the console // gives the user some options
+            string Choice = Console.ReadLine().ToLower(); // Declares a string variable and stores user input inside // ".ToLower()" converts the user input into lowercase
+            Console.WriteLine(); // Creates a gap the size of one line in the console
+            if (Choice == "y") // Training game
             {
                 MaxNumber = 1000;
                 MaxTarget = 1000;
-                TrainingGame = true;
-                Targets = new List<int> { -1, -1, -1, -1, -1, 23, 9, 140, 82, 121, 34, 45, 68, 75, 34, 23, 119, 43, 23, 119 };
+                TrainingGame = true; 
+                Targets = new List<int> { -1, -1, -1, -1, -1, 23, 9, 140, 82, 121, 34, 45, 68, 75, 34, 23, 119, 43, 23, 119 }; // initialises the list Targets and stores many values in it that are always going to be the same numbers
             }
-            else
+            else // Random game
             {
                 MaxNumber = 10;
                 MaxTarget = 50;
