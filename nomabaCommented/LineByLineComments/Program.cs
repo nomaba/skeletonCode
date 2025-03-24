@@ -38,7 +38,7 @@ namespace TargetClearCS
                 MaxNumber = 10;
                 MaxTarget = 50;
                 TrainingGame = false;
-                Targets = CreateTargets(MaxNumberOfTargets, MaxTarget);
+                Targets = CreateTargets(MaxNumberOfTargets, MaxTarget); //
             }
             NumbersAllowed = FillNumbers(NumbersAllowed, TrainingGame, MaxNumber);
             PlayGame(Targets, NumbersAllowed, TrainingGame, MaxTarget, MaxNumber);
