@@ -1,9 +1,0 @@
-R:\mergesort\bank account\bin\Debug\bank account.exe.config
-R:\mergesort\bank account\bin\Debug\bank account.exe
-R:\mergesort\bank account\bin\Debug\bank account.pdb
-R:\mergesort\bank account\obj\Debug\bank account.csprojAssemblyReference.cache
-R:\mergesort\bank account\obj\Debug\bank_account.Form1.resources
-R:\mergesort\bank account\obj\Debug\bank account.csproj.GenerateResource.cache
-R:\mergesort\bank account\obj\Debug\bank account.csproj.CoreCompileInputs.cache
-R:\mergesort\bank account\obj\Debug\bank account.exe
-R:\mergesort\bank account\obj\Debug\bank account.pdb
