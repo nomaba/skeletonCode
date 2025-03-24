@@ -11,7 +11,9 @@ I have made three folders named "MrHarmanCommented", "unedditedCode" and "nomaba
 I have separted all of the subroutines into different files and have put them in the folders called "subroutines".
 These folders can be found in the "MrHarmanCommented", "unedditiedCode" and the "nomabaCommented" folders.
 
-The code may not be indented properly because when i imported the code into github it lost all of its indenting so i had to indent it myself.
+Code in folders by the name of "LineByLineComments" will have each and every line commented but these comments will only pay respect to the line that they are in. The will not have any consideraton of context around that line
+
+The code may not be indented properly because when i imported the code into github it lost all of its indentation so i had to indent it myself.
 
 Please contact me if there are any errors in the code or if the code has not been indented propely.
 
