@@ -28,9 +28,9 @@ namespace TargetClearCS
             Console.WriteLine(); // Creates a gap the size of one line in the console
             if (Choice == "y") // Training game
             {
-                MaxNumber = 1000;
-                MaxTarget = 1000;
-                TrainingGame = true; 
+                MaxNumber = 1000; //sets the integer MaxNumber to 1000
+                MaxTarget = 1000; //sets the integer MaxTarger to 1000
+                TrainingGame = true; //sets the boolean MaxTarger to 1000
                 Targets = new List<int> { -1, -1, -1, -1, -1, 23, 9, 140, 82, 121, 34, 45, 68, 75, 34, 23, 119, 43, 23, 119 }; // initialises the list Targets and stores many values in it that are always going to be the same numbers
             }
             else // Random game
