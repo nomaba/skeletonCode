@@ -3,6 +3,4 @@
 - There are 3 slashes inbetween each subroutine
 - There are 15 slashes inbetween each class
 
-# List of all subroutines
-
-# List of all class
+# List of all subroutines and where they are located
