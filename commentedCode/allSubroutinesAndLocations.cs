@@ -17,6 +17,7 @@ namespace AntSimCS
             public Simulation(List<int> SimulationParameters)
             public void SetUpANestAt(int Row, int Column)
             public void AddFoodToCell(int Row, int Column, int Quantity)
+            private int GetIndex(int Row, int Column)
         }
     }
 }
