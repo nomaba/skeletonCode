@@ -6,15 +6,15 @@ namespace AntSimCS
 
 
         static void Main() {}
-        static void DisplayMenu() {}
-        static string GetChoice() {}
-        static void GetCellReference(ref int Row, ref int Column) {}
+        static void DisplayMenu() {} // outputs the game menu to the console
+        static string GetChoice() {} // Returns the user's menu choice
+        static void GetCellReference(ref int Row, ref int Column) {} // gets the user to enter a row and column number and stores it in variables
 
 
 
         class Simulation
         {
-            public Simulation(List<int> SimulationParameters) { }
+            public Simulation(List<int> SimulationParameters) { } // constructor
             public void SetUpANestAt(int Row, int Column) { }
             public void AddFoodToCell(int Row, int Column, int Quantity) { }
             private int GetIndex(int Row, int Column) { }
