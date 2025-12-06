@@ -1,0 +1,7 @@
+S:\skeletonCode\Practice stuff\SCP 22\bin\Debug\SCP 22.exe.config
+S:\skeletonCode\Practice stuff\SCP 22\bin\Debug\SCP 22.exe
+S:\skeletonCode\Practice stuff\SCP 22\bin\Debug\SCP 22.pdb
+S:\skeletonCode\Practice stuff\SCP 22\obj\Debug\SCP 22.csproj.AssemblyReference.cache
+S:\skeletonCode\Practice stuff\SCP 22\obj\Debug\SCP 22.csproj.CoreCompileInputs.cache
+S:\skeletonCode\Practice stuff\SCP 22\obj\Debug\SCP 22.exe
+S:\skeletonCode\Practice stuff\SCP 22\obj\Debug\SCP 22.pdb

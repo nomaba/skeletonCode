@@ -1,0 +1,7 @@
+S:\skeletonCode\Practice stuff\Section B questions\RLE\bin\Debug\RLE.exe.config
+S:\skeletonCode\Practice stuff\Section B questions\RLE\bin\Debug\RLE.exe
+S:\skeletonCode\Practice stuff\Section B questions\RLE\bin\Debug\RLE.pdb
+S:\skeletonCode\Practice stuff\Section B questions\RLE\obj\Debug\RLE.csproj.AssemblyReference.cache
+S:\skeletonCode\Practice stuff\Section B questions\RLE\obj\Debug\RLE.csproj.CoreCompileInputs.cache
+S:\skeletonCode\Practice stuff\Section B questions\RLE\obj\Debug\RLE.exe
+S:\skeletonCode\Practice stuff\Section B questions\RLE\obj\Debug\RLE.pdb
