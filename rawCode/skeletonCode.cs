@@ -1,7 +1,8 @@
-//Skeleton Program code for the AQA A Level Paper 1 Summer 2026 examination
+﻿//Skeleton Program code for the AQA A Level Paper 1 Summer 2026 examination
 //this code should be used in conjunction with the Preliminary Material
 //written by the AQA Programmer Team
 //developed in the Visual Studio Community Edition programming environment
+//Version 2
 
 using System;
 using System.Collections.Generic;
@@ -148,11 +149,20 @@ namespace AntSimCS
                 }
                 for (int Count = 1; Count <= StartingNumberOfFoodCells; Count++)
                 {
+                    bool Allowed;
                     do
                     {
+                        Allowed = true;
                         Row = RGen.Next(1, NumberOfRows + 1);
                         Column = RGen.Next(1, NumberOfColumns + 1);
-                    } while (Row == 2 && Column == 4);
+                        foreach (Nest N in Nests)
+                        {
+                            if (N.GetRow() == Row && N.GetColumn() == Column)
+                            {
+                                Allowed = false;
+                            }
+                        }
+                    } while (!Allowed);
                     AddFoodToCell(Row, Column, 500);
                 }
             }
@@ -422,7 +432,7 @@ namespace AntSimCS
                             AddFoodToNest(A.GetFoodCarried(), A.GetRow(), A.GetColumn());
                             A.UpdateFoodCarried(-A.GetFoodCarried());
                         }
-                        else if (CurrentCell.GetAmountOfFood() > 0 && A.GetFoodCarried() == 0)
+                        else if (CurrentCell.GetAmountOfFood() > 0 && A.GetFoodCarried() == 0 && A.GetFoodCapacity() > 0)
                         {
                             int FoodObtained;
                             do
@@ -706,6 +716,7 @@ namespace AntSimCS
                 }
                 int AntsToCull = 0;
                 int Count = 0;
+                int AntsInNestCount = 0;
                 foreach (Ant A in Ants)
                 {
                     if (A.GetNestRow() == Row && A.GetNestColumn() == Column)
@@ -717,28 +728,33 @@ namespace AntSimCS
                         else
                         {
                             Count += 2;
+                            AntsInNestCount++;
                         }
                     }
                 }
                 ChangeFood(-Count);
-                if (FoodLevel == 0 && Ants.Count > 0)
+                if (FoodLevel == 0 && AntsInNestCount > 0)
                 {
                     AntsToCull++;
                 }
-                if (FoodLevel < Ants.Count)
+                if (FoodLevel < AntsInNestCount)
                 {
                     AntsToCull++;
                 }
-                if (FoodLevel < Ants.Count * 5)
+                if (FoodLevel < AntsInNestCount * 5)
                 {
                     AntsToCull++;
-                    if (AntsToCull > Ants.Count) 
+                    if (AntsToCull > AntsInNestCount)
                     {
-                        AntsToCull = Ants.Count;
+                        AntsToCull = AntsInNestCount;
                     }
                     for (int A = 1; A <= AntsToCull; A++)
                     {
-                        int RPos = RGen.Next(0, Ants.Count);
+                        int RPos;
+                        do
+                        {
+                            RPos = RGen.Next(0, Ants.Count);
+                        } while (!(Ants[RPos].GetNestRow() == Row && Ants[RPos].GetNestColumn() == Column));
                         if (Ants[RPos].GetTypeOfAnt() == "queen")
                         {
                             NumberOfQueens--;
@@ -754,11 +770,12 @@ namespace AntSimCS
                         if (RNo1 < 50)
                         {
                             int RNo2 = RGen.Next(0, 100);
-                            if (RNo2 < 2) 
+                            if (RNo2 < 2)
                             {
                                 Ants.Add(new QueenAnt(Row, Column, Row, Column));
+                                NumberOfQueens++;
                             }
-                            else 
+                            else
                             {
                                 Ants.Add(new WorkerAnt(Row, Column, Row, Column));
                             }
