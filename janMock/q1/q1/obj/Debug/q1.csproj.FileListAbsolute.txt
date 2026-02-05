@@ -1,0 +1,7 @@
+S:\skeletonCode\janMock\q1\q1\bin\Debug\q1.exe.config
+S:\skeletonCode\janMock\q1\q1\bin\Debug\q1.exe
+S:\skeletonCode\janMock\q1\q1\bin\Debug\q1.pdb
+S:\skeletonCode\janMock\q1\q1\obj\Debug\q1.csproj.AssemblyReference.cache
+S:\skeletonCode\janMock\q1\q1\obj\Debug\q1.csproj.CoreCompileInputs.cache
+S:\skeletonCode\janMock\q1\q1\obj\Debug\q1.exe
+S:\skeletonCode\janMock\q1\q1\obj\Debug\q1.pdb

@@ -1,0 +1,7 @@
+S:\skeletonCode\Coding Tasks\T4\T4a\T4a\bin\Debug\T4a.exe.config
+S:\skeletonCode\Coding Tasks\T4\T4a\T4a\bin\Debug\T4a.exe
+S:\skeletonCode\Coding Tasks\T4\T4a\T4a\bin\Debug\T4a.pdb
+S:\skeletonCode\Coding Tasks\T4\T4a\T4a\obj\Debug\T4a.csproj.AssemblyReference.cache
+S:\skeletonCode\Coding Tasks\T4\T4a\T4a\obj\Debug\T4a.csproj.CoreCompileInputs.cache
+S:\skeletonCode\Coding Tasks\T4\T4a\T4a\obj\Debug\T4a.exe
+S:\skeletonCode\Coding Tasks\T4\T4a\T4a\obj\Debug\T4a.pdb

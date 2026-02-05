@@ -1,0 +1,137 @@
+<html>
+<head> 
+	<title>Introduction | Ant Simulation (2026)</title>
+
+	</script>	
+	<script src="lightbox/js/jquery-1.10.2.min.js"></script>
+	<script src="lightbox/js/lightbox-2.6.min.js"></script>
+	
+	<link href="style.css" rel="stylesheet" />
+	<link href="lightbox/css/lightbox.css" rel="stylesheet" />
+	<link href='http://fonts.googleapis.com/css?family=Comfortaa:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'>
+
+	</head>
+
+<body>
+
+<!-- .container start -->
+<div class="container">
+	
+	<!-- .banner start -->
+	<div class="banner">	
+	<img src="images/banner.png" style="border:NONE;">
+		<ul id="nav" class="nav" id="myTopnav">		
+		<li><a href="index.html" class="selected">Introduction</a></li>
+		<li><a href="Breakdown.html">Code Breakdown</a></li>
+		<li><a href="UML.html">UML Diagram</a></li>
+		<li><a href="Video.html">Video</a></li>
+		<li><a href="Questions.html">Theory Questions</a></li>
+		<li><a href="Tasks.html">Coding Tasks</a></li>
+		<li><a href="Solutions.html">Solutions</a></li>
+		<li class="end">C# Edition</li>
+	</ul>	
+	</div>
+	<!-- .banner end -->	
+
+	
+	<!-- .topic_header start -->
+	<div class="topic_header">
+	<!--<table style=""><tr><td><h1><strong>1. The Basics</strong></h1></td></tr></table>-->
+		
+	</div>
+	<!-- .topic_header end -->
+	
+	<!-- .topic_info start -->		
+		
+	<div class="topic_info">	
+	
+	<h1>Introduction</h1>
+	
+		<p><em><b>
+	This pack is based on Version 2 of the Ant Simulation code released by AQA on 21/11/25. Please ensure you are using Version 2 of the code from Centre Services.
+	</b></em></p>
+	
+	<div style="background: lightblue; margin:10px 0px;">
+	<p>
+	<em><b>Ant Simulation</b></em> represents a small world of ants showing their interaction with nests, food and pheromone trails.
+	</p>
+
+	<p>
+	The user can experiment with <mark>four different simulations</mark>, each representing different configurations of the small world. The world is represented by either a <mark>5×5 or 10×10 grid</mark>. Simulations <mark>1–3 contain a single ant nest</mark>, and simulation <mark>4 contains two ant nests</mark>. At the start of the simulation, <mark>each nest contains a single queen ant and multiple worker ants (configured by parameters when the application starts up)</mark>.
+	</p>
+	<p>
+	The application uses the concept of stages to advance, <mark>each stage essentially being a snapshot of the current state of the simulation world</mark>. As the user advances the stages, the entities within the simulation world, be those ants, pheromones or the nests themselves, all advance one stage at a time, each performing one of their preset operations. Examples of these operations are <mark>move, pick up food, follow a pheromone trail, or deposit food at the nest</mark>.
+	</p>
+	<p>
+	<mark>Initially, worker ants move at random around the simulation world</mark>, moving to one of their neighbouring cells per stage. If an ant finds a cell containing food, <mark>the ant picks up a small amount of that food</mark>, and then as the stages are advanced by the user, makes its way directly back to the nest. As it moves back towards the nest, <mark>the worker ant lays down a pheromone trail</mark>. If other worker ants are near to that pheromone trail, <mark>they will follow it to the food source</mark> to also collect food and take it back to the nest. This represents how ants behave in the real world.
+	</p>
+	<p>
+	The application also represents the relationship between food available at a nest and ant population. At each stage, <mark>if the food in a nest gets too low, or the population gets too high for the food available</mark>, some of the ants belonging to the nest are culled (selectively slaughtered).
+	</p>
+	<p>
+	When the nest has <mark>plentiful food levels</mark>, however, <mark>the queen ant will give birth to new worker ants and even on a very small chance, another queen.</mark>
+	</p>
+	<p>
+	During operation, the user can <mark>display the simulation world in its entirety</mark>, <mark>view part of it</mark>, or even <mark>view an individual cell</mark> within the world to see it in detail.
+	</p>
+	<p>
+	The objective of the application is to experiment with different configurations of the simulation world, advancing the simulation stage by stage to see how the ants interact with each other, the food around them, and the nest.
+	</p>	
+	
+	</div>
+
+	
+	<p>
+	This resource aims to help you get to grips with and prepare for the A Level Paper 1 examination for summer 2026, which is partly based on the <em><b>Ant Simulation</b></em> pre-release material.
+	</p>
+
+	<p>It consists of the following sections:</p>
+
+	<hr>
+	
+	<p><a href="breakdown.html">Code breakdown</a></strong>: a detailed technical overview of the Skeleton Program, describing in detail each class and method in turn – including their purpose/function, parameters and return values. Note that this is intended as a helpful reference document only, and not as a substitute for exploring the code in a practical manner. There is also a ‘Grid Example’ file which can be used as a printout to help students to understand the simulation.  <!--In addition to the code breakdown, there is also a breakdown of the puzzle files, errors in the code, and a set of 'advanced techniques' for exploring the code further.--> </p>
+	
+	<hr>
+	
+	<p><a href="UML.html">UML class diagram activity</a></strong>: requires you to study the program and fill in the gaps with the missing class/method names, data types, associations and access levels.</p>
+
+	<hr>
+	
+	<p><a href="video.html">Video</a>: a quick overview of the <em><b>Ant Simulation</b></em> application mechanics – intended as a visual aid to accompany the notes in the official AQA pre-release material.</p>
+
+	<hr>
+	
+	<p><a href="questions.html">Theory questions</a>: designed to test your understanding of the Skeleton Program. These questions require access to the program, but no modifications need to be made to the program. Write-on (with answer lines) and non-write-on versions are available.</p>
+
+	<hr>	
+
+	<p><a href="tasks.html">Coding tasks</a>: there are 24 modification tasks to test your programming skills – as well as an additional 15 modification ideas that you may also want to try as extension tasks.</p>
+
+	<hr>
+	
+	<p> 
+	<a href="solutions.html">Solutions / Mark Schemes</a>: included for UML class diagram activity, theory questions, and coding tasks.</p>
+	</p>
+			
+	<!-- .topic_info end -->		
+
+		
+	</div>
+	
+
+	<div class="footer">
+	<p class="no_print"><a href="#top">Back to Top</a>
+	<span class="no_print" style="float:right;">&copy; <a href="http://zigzageducation.co.uk">ZigZag Education 2025</a></span></p>
+	</div>
+	
+	<!-- .topic_info end -->		
+	
+<!-- .container end -->
+</div>
+
+</body>
+</html>
+
+
