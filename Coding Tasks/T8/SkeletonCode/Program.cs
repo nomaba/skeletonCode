@@ -66,6 +66,13 @@ namespace AntSimCS
                         ThisSimulation.AdvanceStage(NumberOfStages);
                         Console.WriteLine($"Simulation moved on {NumberOfStages} stages{Environment.NewLine}");
                         break;
+                    case "6":
+                        // user wants to move a worker ant
+                        int OriginalRow = 0, OriginalColumn = 0, MovedRow = 0, MovedColumn = 0;
+                        GetCellReference(ref OriginalRow, ref OriginalColumn);
+                        GetCellReference(ref MovedRow, ref MovedColumn);
+                        Console.WriteLine(ThisSimulation.GetAreaDetails(OriginalRow, OriginalColumn, MovedRow, MovedColumn));
+                        break;
                 }
             } while (Choice != "9");
             Console.ReadLine();
@@ -79,6 +86,7 @@ namespace AntSimCS
             Console.WriteLine("3. Inspect cell");
             Console.WriteLine("4. Advance one stage");
             Console.WriteLine("5. Advance X stages");
+            Console.WriteLine("6. Move worker ant");
             Console.WriteLine("9. Quit");
             Console.WriteLine();
             Console.Write("> ");
@@ -645,6 +653,11 @@ namespace AntSimCS
             public override string GetDetails()
             {
                 return $"{base.GetDetails()}, carrying {AmountOfFoodCarried} food, home nest is at {NestRow} {NestColumn}";
+            }
+
+            public void SetNewLocation()
+            {
+
             }
 
             public override void ChooseCellToMoveTo(List<int> ListOfNeighbours, int IndexOfNeighbourWithStrongestPheromone)
