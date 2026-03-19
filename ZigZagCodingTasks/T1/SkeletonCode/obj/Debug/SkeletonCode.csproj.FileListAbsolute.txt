@@ -1,0 +1,7 @@
+R:\repos\skeletonCode\ZigZagCodingTasks\T1\SkeletonCode\bin\Debug\SkeletonCode.exe.config
+R:\repos\skeletonCode\ZigZagCodingTasks\T1\SkeletonCode\bin\Debug\SkeletonCode.exe
+R:\repos\skeletonCode\ZigZagCodingTasks\T1\SkeletonCode\bin\Debug\SkeletonCode.pdb
+R:\repos\skeletonCode\ZigZagCodingTasks\T1\SkeletonCode\obj\Debug\SkeletonCode.csproj.AssemblyReference.cache
+R:\repos\skeletonCode\ZigZagCodingTasks\T1\SkeletonCode\obj\Debug\SkeletonCode.csproj.CoreCompileInputs.cache
+R:\repos\skeletonCode\ZigZagCodingTasks\T1\SkeletonCode\obj\Debug\SkeletonCode.exe
+R:\repos\skeletonCode\ZigZagCodingTasks\T1\SkeletonCode\obj\Debug\SkeletonCode.pdb
