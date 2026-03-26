@@ -85,13 +85,13 @@ namespace AntSimCS
             Console.Write("> ");
         }
 
-        static string GetChoice()
+        static string GetChoice() // Returns any user input as a string
         {
             string Choice = Console.ReadLine();
             return Choice;
         }
 
-        static void GetCellReference(ref int Row, ref int Column)
+        static void GetCellReference(ref int Row, ref int Column) // asks the user for a row and column number and stores them in variables that were sent as parameters when the method was called
         {
             Console.WriteLine();
             Console.Write("Enter row number: ");
