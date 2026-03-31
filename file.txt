@@ -1,0 +1,53 @@
+SLR 01 – Programming basics
+
+SLR 02 – Programming next steps
+
+SLR 03 – Programming paradigms
+
+SLR 04 – Data structures
+
+SLR 05 – Algorithms
+
+SLR 06 – Abstraction and automation
+
+SLR 07 – Regular & context free languages
+
+SLR 08 – Classification of algorithms
+
+SLR 09 – A model of computation
+
+SLR 10 – Number systems and bases
+
+SLR 11 – Binary
+
+SLR 12 – Coding text & graphics
+
+SLR 13 – Coding sound & music
+
+SLR 14 – Hardware & software
+
+SLR 15 – Programming languages & translators
+
+SLR 16 – Logic gates & boolean algebra
+
+SLR 17 – Internal computer architecture
+
+SLR 18 – Input & output devices
+
+SLR 19 – Moral, social, legal, cultural issues
+
+SLR 20 – Communication
+
+SLR 21 – Networks & the Internet
+
+SLR 22 – TCP IP & protocols
+
+SLR 23 – Databases
+
+SLR 24 – Big data
+
+SLR 25 – Functional programming paradigms
+
+SLR 26 – Writing functional programs
+
+SLR 27 – Aspects of software development
